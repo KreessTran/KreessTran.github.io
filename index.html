@@ -105,6 +105,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
     </script>
     <script>AOS.init({ once: true, offset: 120 });</script>
+
+    <script>
+        (function () {
+            const header = document.querySelector('header');
+            let lastY = window.scrollY;
+
+            window.addEventListener('scroll', () => {
+                const currY = window.scrollY;
+
+                // Only trigger after the user has scrolled 80 px
+                if (Math.abs(currY - lastY) < 5) return;
+
+                if (currY > lastY && currY > 80) {
+                    /* scrolling down → hide */
+                    header.classList.add('hide');
+                } else {
+                    /* scrolling up → show */
+                    header.classList.remove('hide');
+                }
+                lastY = currY;
+            });
+        })();
+    </script>
+
 </body>
 
 </html>

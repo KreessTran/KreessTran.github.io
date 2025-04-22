@@ -121,6 +121,21 @@ footer {
     font-size: 0.875rem;
 }
 
+/* ----- Hide‑on‑scroll behaviour ----- */
+header {
+    position: sticky;
+    /* stays at top */
+    top: 0;
+    z-index: 1000;
+    /* above cards */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* pushed completely above the viewport */
+header.hide {
+    transform: translateY(-100%);
+}
+
 /* ---- Responsive tweaks --------------------------------------- */
 @media (min-width: 768px) {
     #hero h2 {
