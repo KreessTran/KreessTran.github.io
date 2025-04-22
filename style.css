@@ -121,6 +121,14 @@ footer {
     font-size: 0.875rem;
 }
 
+#about {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 1rem;
+    background: var(--surface);
+    border-radius: var(--radius);
+}
+
 /* ----- Hide‑on‑scroll behaviour ----- */
 header {
     position: sticky;
