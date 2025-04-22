@@ -2,17 +2,46 @@
 <html lang="en">
 
 <head>
+    <!-- ———————————————————— BASICS ———————————————————— -->
     <meta charset="utf-8" />
-    <title>Kris Tran | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Google Font (optional) -->
+    <!-- Primary SEO -->
+    <title>Kris Tran | Developer × Content Creator</title>
+    <meta name="description"
+        content="Projects that merge secure software with viral storytelling—Beaver Vault, CUDA Monte Carlo, Roblox game dev, and more." />
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Kris Tran Portfolio" />
+    <meta property="og:description" content="Secure apps, viral videos, and everything in between." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kristophertran.github.io/" />
+    <meta property="og:image" content="https://kristophertran.github.io/images/og-cover.webp" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@yourhandle" />
+    <meta name="twitter:title" content="Kris Tran Portfolio" />
+    <meta name="twitter:description" content="Secure apps, viral videos, and everything in between." />
+    <meta name="twitter:image" content="https://kristophertran.github.io/images/og-cover.webp" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- Google Fonts: Poppins (preconnect + preload improves performance) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Animate‑on‑Scroll (AOS) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 
 <body>
+    <!-- ———————————————————— HEADER ———————————————————— -->
     <header>
         <h1>Kris Tran</h1>
         <nav>
@@ -22,31 +51,60 @@
         </nav>
     </header>
 
+    <!-- ———————————————————— HERO ———————————————————— -->
     <section id="hero">
         <h2>Developer × Content Creator</h2>
-        <p>I build secure apps, viral videos, and everything in between.</p>
+        <p>I build secure apps, viral videos, and everything in between.</p>
         <a class="btn" href="#projects">See my work</a>
     </section>
 
+    <!-- —————————————————— PROJECTS GRID ————————————————— -->
     <section id="projects">
-        <!-- repeat this card per project -->
-        <article class="card">
-            <img src="images/beavervault.png" alt="Screenshot of Beaver Vault" />
-            <div class="card‑body">
+        <!-- Card 1 -->
+        <article class="card" data-aos="fade-up" data-aos-duration="600">
+            <img src="images/beavervault.webp" width="1280" height="720" loading="lazy"
+                alt="Screenshot – Beaver Vault dashboard" />
+            <div class="card-body">
                 <h3>Beaver Vault</h3>
-                <p>React + FastAPI password‑manager that reduced API latency 45 %.</p>
-                <a class="btn secondary" href="https://github.com/…">GitHub →</a>
+                <p>React + FastAPI password‑manager that cut API latency 45 %.</p>
+                <a class="btn secondary" href="https://github.com/yourname/beavervault">GitHub →</a>
             </div>
         </article>
+
+        <!-- Card 2 -->
+        <article class="card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+            <img src="images/cuda-montecarlo.webp" width="1280" height="720" loading="lazy"
+                alt="CUDA simulation heat‑map" />
+            <div class="card-body">
+                <h3>Monte Carlo on CUDA</h3>
+                <p>Achieved 200× speed‑up using GPU parallelism and shared memory.</p>
+                <a class="btn secondary" href="https://github.com/yourname/cuda-montecarlo">GitHub →</a>
+            </div>
+        </article>
+
+        <!-- Duplicate the <article> block for more projects -->
     </section>
 
-    <section id="about">
-        <!-- short bio -->
+    <!-- ——————————————————— ABOUT ——————————————————— -->
+    <section id="about" data-aos="fade-in">
+        <h2>About Me</h2>
+        <p>
+            OSU graduate, full‑stack developer, and 100 K‑follower content creator.
+            I love turning complex tech into stories that resonate.
+        </p>
     </section>
 
+    <!-- ——————————————————— FOOTER ——————————————————— -->
     <footer id="contact">
-        <p>© 2025 Kris Tran • <a href="mailto:kreesstran@gmail.com">Email me</a></p>
+        <p>© 2025 Kris Tran •
+            <a href="mailto:kreesstran@gmail.com">Email me</a>
+        </p>
     </footer>
+
+    <!-- ——————————————————— SCRIPTS —————————————————— -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
+    </script>
+    <script>AOS.init({ once: true, offset: 120 });</script>
 </body>
 
 </html>
