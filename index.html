@@ -1,13 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Kris Tran | Portfolio</title>
+    <meta charset="utf-8" />
+    <title>Kris Tran | Portfolio</title>
+
+    <!-- Google Font (optional) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <h1>Hello, world! Portfolio coming soon.</h1>
+    <header>
+        <h1>Kris Tran</h1>
+        <nav>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Developer × Content Creator</h2>
+        <p>I build secure apps, viral videos, and everything in between.</p>
+        <a class="btn" href="#projects">See my work</a>
+    </section>
+
+    <section id="projects">
+        <!-- repeat this card per project -->
+        <article class="card">
+            <img src="images/beavervault.png" alt="Screenshot of Beaver Vault" />
+            <div class="card‑body">
+                <h3>Beaver Vault</h3>
+                <p>React + FastAPI password‑manager that reduced API latency 45 %.</p>
+                <a class="btn secondary" href="https://github.com/…">GitHub →</a>
+            </div>
+        </article>
+    </section>
+
+    <section id="about">
+        <!-- short bio -->
+    </section>
+
+    <footer id="contact">
+        <p>© 2025 Kris Tran • <a href="mailto:kreesstran@gmail.com">Email me</a></p>
+    </footer>
 </body>
 
 </html>
